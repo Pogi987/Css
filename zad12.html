@@ -1,0 +1,208 @@
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html"; charset=utf-8">
+</head>
+<body>
+ <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Jednostki Miar w CSS</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            text-transform: uppercase;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #2980b9;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #ecf0f1;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .unit-code {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Jednostki Miar w CSS</h1>
+
+    <h2>1. Jednostki Bezwzględne</h2>
+    <p>Używane, gdy istotna jest precyzja (np. wydruk), niezależnie od rozdzielczości ekranu.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Jednostka</th>
+                <th>Nazwa</th>
+                <th>Opis / Przelicznik</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="unit-code">px</td>
+                <td>Piksel</td>
+                <td>1px = 1/96 cala. Najpopularniejsza jednostka ekranowa.</td>
+            </tr>
+            <tr>
+                <td class="unit-code">cm</td>
+                <td>Centymetr</td>
+                <td>1cm = 96px / 2.54cm = 1 cal.</td>
+            </tr>
+            <tr>
+                <td class="unit-code">mm</td>
+                <td>Milimetr</td>
+                <td>1mm = 1/10 cm.</td>
+            </tr>
+            <tr>
+                <td class="unit-code">in</td>
+                <td>Cal</td>
+                <td>1in = 2.54cm = 96px.</td>
+            </tr>
+            <tr>
+                <td class="unit-code">pt</td>
+                <td>Punkt</td>
+                <td>1pt = 1/72 cala. Standard w druku.</td>
+            </tr>
+            <tr>
+                <td class="unit-code">pc</td>
+                <td>Pica</td>
+                <td>1pc = 12 punktów.</td>
+            </tr>
+            <tr>
+                <td class="unit-code">Q</td>
+                <td>Ćwierć milimetra</td>
+                <td>1Q = 1/40 cm.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>2. Jednostki Względne</h2>
+    
+    <h3>A. Względem czcionki</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Jednostka</th>
+                <th>Nazwa</th>
+                <th>Odniesienie</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="unit-code">em</td>
+                <td>Element em</td>
+                <td>Względem rozmiaru czcionki elementu lub rodzica.</td>
+            </tr>
+            <tr>
+                <td class="unit-code">rem</td>
+                <td>Root em</td>
+                <td>Względem rozmiaru czcionki elementu &lt;html&gt;.</td>
+            </tr>
+            <tr>
+                <td class="unit-code">ex</td>
+                <td>x-height</td>
+                <td>Względem wysokości małej litery 'x'.</td>
+            </tr>
+            <tr>
+                <td class="unit-code">ch</td>
+                <td>Zero width</td>
+                <td>Względem szerokości cyfry '0'.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>B. Względem okna (Viewport)</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Jednostka</th>
+                <th>Nazwa</th>
+                <th>Opis</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="unit-code">vw</td>
+                <td>Viewport Width</td>
+                <td>1% szerokości okna przeglądarki.</td>
+            </tr>
+            <tr>
+                <td class="unit-code">vh</td>
+                <td>Viewport Height</td>
+                <td>1% wysokości okna przeglądarki.</td>
+            </tr>
+            <tr>
+                <td class="unit-code">vmin</td>
+                <td>Viewport Min</td>
+                <td>1% mniejszego wymiaru okna.</td>
+            </tr>
+            <tr>
+                <td class="unit-code">vmax</td>
+                <td>Viewport Max</td>
+                <td>1% większego wymiaru okna.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>C. Inne</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Jednostka</th>
+                <th>Nazwa</th>
+                <th>Odniesienie</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="unit-code">%</td>
+                <td>Procent</td>
+                <td>Względem rozmiaru kontenera nadrzędnego.</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+</body>
+</html>
+<!--  Starostecki z12_html  --> 
