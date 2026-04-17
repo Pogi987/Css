@@ -1,9 +1,11 @@
-p  { 
- color:    #65A054; 
- font-size:  20px; 
+p  
+{ 
+ color:    #679C5C; 
+ font-size:  15px; 
 } 
-body  { 
- color:    rgb(10%, 48%, 78%);
- font-size:  16px; 
+body  
+{ 
+ color:    rgb(51%,36%,79%);
+ font-size:  15px; 
 } 
 /*  Orzeł Zad15_css  */ 
