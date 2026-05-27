@@ -1,31 +1,31 @@
 p#pogrubienie_orzel
 {
-  font-size:34;
+  font-size:30px;
   font-weight:900;
   color:#8129cc;
 }
 p#pochylone_orzel
 {
-  font-size:34;
-  font-weight:900;
-  color:#8129cc;
-}
-p#index_dolny_orzel
-{
-  font-size:34;
-  font-weight:900;
+  font-style: italic;
+  font-size:35pt;
   color:#8129cc;
 }
 p#index_gorny_orzel
 {
+  vertical-align:super;
+  font-size:1cm;
+  color:#8129cc;
+}
+p#index_dolny_orzel
+{
+  vertical-align:sub;
   font-size:34;
-  font-weight:900;
   color:#8129cc;
 }
 p#mono_orzel
 {
+  vertical-align:sub;
   font-size:34;
-  font-weight:900;
   color:#8129cc;
 }
 p#powiekszenie_orzel
